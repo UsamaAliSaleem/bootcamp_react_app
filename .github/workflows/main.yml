@@ -7,8 +7,7 @@ name: CI
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
+
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -27,7 +26,7 @@ jobs:
       with:
         version: 12
           
-    - name: Gethub Action for Yarn 
+    - name: GetHub Action for Yarn 
       uses: Borales/actions-yarn@v2.1.0
       with:
         cmd: install
